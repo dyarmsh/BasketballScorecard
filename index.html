@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <meta charset="utf-8"> <!-- enabling effective conversion of chars to bytes -->
+        <meta name="viewport" content="width=device-width", initial-scale=1> <!-- for responsive websites -->
+    </head>
+    <body>
+        <nav>
+            <button class="newgame" onclick="newGame()">NEW GAME</button>
+        </nav>
+        
+        <div class="container">
+            <div class="column">
+                <h3>HOME</h3>
+                <h1 class="score" id="displayScoreHome">0<h1>
+                <div class="row">
+                    <button id="plusOneHomeButton" onclick="plusOneHome()">+1</button>
+                    <button id="plusOneHomeButton" onclick="plusTwoHome()">+2</button>
+                    <button id="plusOneHomeButton" onclick="plusThreeHome()">+3</button>
+                </div>
+            </div>
+                
+            <div class="column">
+                <h3>GUEST</h3>
+                <h1 class="score" id="displayScoreGuest">0</h1>
+                <div class="row">
+                    <button id="plusOneGuestButton" onclick="plusOneGuest()">+1</button>
+                    <button id="plusTwoGuestButton" onclick="plusTwoGuest()">+2</button>
+                    <button id="plusThreeGuestButton" onclick="plusThreeGuest()">+3</button>
+                </div>
+            </div>       
+        </div>
+        
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
